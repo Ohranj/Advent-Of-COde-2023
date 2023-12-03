@@ -30,7 +30,7 @@ for (const [index, game] of strings.entries()) {
     }
 }
 
-console.group(sum)
+console.log(sum)
 
 
 
@@ -57,4 +57,4 @@ for (const game of strings) {
     sum2 += Object.values(bag).reduce((acc, c) =>  acc * c, 1)
 }
 
-console.group(sum2)
+console.log(sum2)
