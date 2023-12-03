@@ -3,7 +3,7 @@ import sys
 import os
 
 url = 'https://adventofcode.com'
-storeInputText = '/input.txt'
+storeInputTextLocation = '/input.txt'
 
 year = sys.argv[1]
 day = sys.argv[2]
@@ -15,7 +15,7 @@ if not year.isnumeric() or not day.isnumeric():
     sys.exit('Append a numeric year followed by day to the cmd line when calling the script')
 
 
-#Read sesion pasted into file
+#Read session pasted into file
 session = open("session.txt", "r").read()
 
 try:
@@ -29,5 +29,5 @@ except requests.exceptions.HTTPError as e:
 #Create directory and append input data to file
 filename = './' + year + '/day' + day
 os.makedirs(filename, exist_ok=True)
-with open(filename + storeInputText, "w") as f:
+with open(filename + storeInputTextLocation, "w") as f:
     f.write(x.text.strip())
