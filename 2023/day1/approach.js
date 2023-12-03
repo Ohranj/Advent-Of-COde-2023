@@ -1,5 +1,6 @@
 const fs = require('fs');
 
+
 const strings = fs.readFileSync('input.txt', 'utf8').split('\n')
 
 
