@@ -16,7 +16,8 @@ docker run -u alex -it --mount type=bind,src="$(pwd)",target=/[workdir] [reposit
 
 or to mount the local root to the aoc folder:
 
-```docker run -u alex -it -v ./:/aoc advent_of_code:latest bash
+```
+docker run -u alex -it -v ./:/aoc advent_of_code:latest bash
 ```
 
 ## Fetching input data
