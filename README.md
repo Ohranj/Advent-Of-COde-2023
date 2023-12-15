@@ -22,3 +22,9 @@ docker run -u alex -it -v ./:/aoc advent_of_code:latest bash
 
 ## Fetching input data
 ```Log into AOC and grab your session cookie. Paste the session cookie into a session.txt file at the root of the project```
+
+Run the command
+
+```
+python3 fetchInput [year] [day]
+```
