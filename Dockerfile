@@ -13,5 +13,7 @@ RUN pip3 install requests
 RUN adduser alex
 RUN usermod -aG sudo alex
 
+USER $user
+
 #Copy local folders to conatiner
 COPY . .
